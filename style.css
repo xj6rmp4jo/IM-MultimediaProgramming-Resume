@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #CAD1CA;
+    margin: 0px;
+}
+
+header {
+    background-color: #76736F;
+    text-align: center;
+    color: #CAD1CA;
+    margin:0px;
+    padding: 20px;
+}
+
+nav {
+    clear: both;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+nav a:hover{
+    background-color: #76736F;
+    color:white;
+}
+
+a:visited {
+    color: inherit;
+}
+
+footer {
+    background-color: #76736F;
+    color:#CAD1CA;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float:left;
+    width:48.5%;
+}
+
+.S1L{
+    text-align: center;
+    float:left;
+    width:48.5%;
+}
+
+.S1R{
+    float:right;
+    width:48.5%;
+}
+
+.uglyFace{
+    width: 200px;
+    height: auto;
+}
+
+.universityIcon{
+    width: 200px;
+    height: auto;
+}
+
+.inscription{
+    clear: both;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.S2L{
+    text-align: left;
+    float:left;
+    width:13%;
+}
+
+.S2R{
+    width:85%;
+}
+
+aside {
+    float:right;
+    text-align: center;
+    width:48.5%;
+
+    border-left: 2px solid #76736F;
+    padding-left: 2%;
+}
+
+.container {
+    display: flex;
+}
+  
+.S3L, .S3R {
+    display: flex;
+    flex-direction: column;
+}
+
+.S3L{
+    text-align: left;
+    float:left;
+    width:13%;
+}
+
+.S3R{
+    width:85%;
+}
+
+.grade {
+    
+}
+
+.project {
+    text-align: left;
+}
+
+.S3L .grade:nth-of-type(2) {
+    margin-top: 44px;
+}
+
+.S3L .grade:nth-of-type(3) {
+    margin-top: 22px;
+}
+
+.S3L .grade:nth-of-type(4) {
+    margin-top: 183px;
+}
+
+.S3L .grade:nth-of-type(5) {
+    margin-top: 160px;
+}
+
+.S3L .grade:nth-of-type(6) {
+    margin-top: 367px;
+}
+
+.S3L .grade:nth-of-type(7) {
+    margin-top: 62px;
+}
+
+#text {
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.sameline {
+    display: flex;
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.txt-red {
+    color: rgb(223, 2, 2);
+}
+
+.noMarginTop {
+    margin-top: 0;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.txt span {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.progress {
+    height: 20px;
+    background-color: #CAD1CA;
+    margin-bottom: 14px;
+
+    border: 4px solid #76736F;
+    border-radius: 8px;
+}
+  
+.progress-bar {
+    height: 100%;
+    background-color: #76736F;
+    border-right: 3px solid #76736F;
+    border-left:  3px solid #76736F;
+    border-radius: 8px;
+}
+
+
+
+@media screen and (max-width:800px) {
+    article, aside {
+        float: none;
+        width: 100%;
+    }
+
+    .card {
+        padding: 10px;
+        margin: 15px 0px;
+    }
+
+    img {
+        max-width:100%;
+        height:90%;
+    }
+}

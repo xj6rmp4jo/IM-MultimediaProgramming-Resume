@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>個人網頁排版</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');</style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>個人簡歷</h1>
+  </header>
+
+  <main>
+    <article> <!-- 名字, 照片, 學歷, 自我介紹, 座右銘, 各種連結, 程式語言與其進度條 -->
+      <section class="S1L"> <!-- 名字與照片 -->
+        <h2>盧俊崴</h2>
+        <img class="uglyFace" src="./image/uglyFace.JPG" />
+      </section> <!-- class="S1L" -->
+
+      <section class="S1R"> <!-- 學歷, 中原的icon, 簡短的自我介紹 -->
+        <h3>中原大學　資訊工程學系</h3>
+        <img class="universityIcon" src="./image/universityIcon.png" align="center" />
+        <p>　　22歲，中原大學四年級在學生，會撰寫多種程式語言，具有十足的執行力，擅於溝通及團隊合作。</p>
+      </section> <!-- class="S1R" -->
+
+      <p class="inscription">No pain, no gain.</p> <!-- 座右銘 -->
+
+      <nav> <!-- 各種連結 -->
+        程式作品集 : <a href="https://github.com/xj6rmp4jo">Github</a>
+        聯絡資訊 : <a href="mailto:rmp4joxj6@gmail.com">e-mail</a>
+        社群網站 : <a href="https://www.facebook.com/profile.php?id=100013739882577">FB</a>
+      </nav>
+
+      <h2>專業與技能</h2>
+      <div class="wrapper"> <!-- 程式語言與其進度條 -->
+        <section class="S2L"> <!-- 專業技能中, 程式語言的文字 -->
+          <div class="txt">
+            <span>C/C++</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>SQL</span>
+            <span>NET</span>
+            <span>HTML/CSS</span>
+            <span>Assembly</span>
+            <span>Verilog</span>
+          </div> <!-- class="txt" -->
+        </section> <!-- class="S2L" -->
+
+        <section class="S2R"> <!-- 專業技能中, 程式語言的進度條 -->
+          <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 50%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 65%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+          <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+        </section> <!-- class="S2R" -->
+      </div> <!-- class="wrapper" -->
+
+      <h2 class="noMarginBottom">得獎榮譽</h2>
+
+      <div id="text-container">
+        <p id="text">大一下書卷獎</p>
+      </div> <!-- id="text-container" -->
+
+      <div id="image-container">
+        <img src="./image/honor/img0.jpg">
+      </div> <!-- id="image-container" -->
+    </article>
+
+    <aside> <!-- 程式專案 -->
+      <h2 style="text-align:left">程式專案</h2>
+
+      <div class="container">
+        <section class="S3L">
+          <section class="grade"><p class="bold noMarginBottom">一下</p></section>
+          <section class="grade"><p class="bold noMarginBottom">二上</p></section>
+          <section class="grade"><p class="bold noMarginBottom">二下</p></section>
+          <section class="grade"><p class="bold noMarginBottom">三上</p></section>
+          <section class="grade"><p class="bold noMarginBottom">三下</p></section>
+          <section class="grade"><p class="bold noMarginBottom">四上</p></section>
+          <section class="grade"><p class="bold noMarginBottom">四下</p></section>
+        </section> <!-- class="S3L" -->
+
+        <section class="S3R">
+          <section class="project"> <!-- 一下的 project -->
+            <p class="bold noMarginBottom">計算機概論(下)　切 token</p>
+            <p class="noMarginTop noMarginBottom">　　輸入一個內文是 C++ 程式的 txt 檔時，能夠依據字串的不同進行切 token 的動作，是實作編譯器的第一步。<span class="txt-red">(字串處理)</span></p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 二上的 project -->
+            <p class="bold noMarginBottom">組合語言與嵌入式系統　動態賀年卡</p>
+            <p class="noMarginTop noMarginBottom">　　使用 <span class="txt-red">assembly code</span> 繪出<span class="txt-red">碎形</span>動態賀年卡。</p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 二下的 project -->
+            <p class="bold noMarginBottom">組合語言　ALU Design</p>
+            <p class="noMarginTop">　　使用 <span class="txt-red">Verilog</span> 實作具四則運算功能的多工器。</p>
+
+            <p class="bold noMarginBottom">組合語言　Pipelined CPU Design</p>
+            <p class="noMarginTop">　　使用 <span class="txt-red">Verilog</span> 實作簡易的 Pipelined CPU，使其能在同一時刻執行多個指令的不同階段。</p>
+
+            <p class="bold noMarginBottom">智慧電子專題(一)　找出案例中任一能被整除者</p>
+            <p class="noMarginTop noMarginBottom">　　使用者輸入 A, B，A 為有幾個數字輸入，B 為測試的除數，將 A 個數字作任意運算，在所有答案中，找出能被 B 整除者。<span class="txt-red">(遞迴)</span></p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 三上的 project -->
+            <p class="bold noMarginBottom">系統程式　Lexical Analysis</p>
+            <p class="noMarginTop">　　實作編譯器中 Lexical Analysis 的部分。<span class="txt-red">(字串處理, hash function)</span>
+            </p>
+
+            <p class="bold noMarginBottom">系統程式　Cross Assembler</p>
+            <p class="noMarginTop">　　實作編譯器中 Cross Assembler 的部分，將 <span class="txt-red">assembly code</span> 轉換為<span class="txt-red">機器碼</span>。</p>
+
+            <p class="bold noMarginBottom">智慧電子專題(二)　Huffman Coding</p>
+            <p class="noMarginTop noMarginBottom">　　程式能對輸入檔進行<span class="txt-red">霍夫曼編碼</span>，並輸出編碼結果及壓縮率。<span class="txt-red">(密碼學、二元樹)</span></p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 三下的 project -->
+            <p class="bold noMarginBottom">程式語言　PAL</p>
+            <p class="noMarginTop">　　實作簡易程式編譯器，使其具有算術運算、邏輯運算、簡易命令執行等功能。</p>
+
+            <p class="bold noMarginBottom">演算法分析　渡河問題</p>
+            <p class="noMarginTop">　　有 M 隻狼與 N 隻羊需從西岸渡河到東岸，其使用的船需乘載至少一隻才渡河，最多只能乘載兩隻。由於狼會吃羊的緣故，每次渡河時，不管在西岸或東岸，羊的數目均不能比狼少。<span class="txt-red">(遞迴)</span></p>
+
+            <p class="bold noMarginBottom">演算法分析　最大子陣列問題</p>
+            <p class="noMarginTop">　　給定一整數陣列，其中可能包含正或負整數，目的是找到子陣列，即連續元素整數和，且其總和最大。<span class="txt-red">(Divide and Conquer)</span></p>
+
+            <p class="bold noMarginBottom">演算法分析　LCS 問題</p>
+            <p class="noMarginTop">　　給定兩個序列(或字串)，目的是找到兩個序列連續的共同字元，稱為共同序列，且其長度必須最長。<span class="txt-red">(動態規劃法)</span></p>
+
+            <p class="bold noMarginBottom">演算法分析　推箱子遊戲</p>
+            <p class="noMarginTop noMarginBottom">　　使用者以文字輸入二維迷宮圖，其中包含角色、箱子、目的地、障壁...等，目的是以最小步數將箱子搬運至目的地。<span class="txt-red">(遞迴)</span></p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 四上的 project -->
+            <p class="bold noMarginBottom">畢業專題　基於街景分析及揮手辨識之智慧公車安全輔助系統</p>
+            <p class="noMarginTop noMarginBottom">　　建構出一個具街景分析和揮手辨識功能的導航系統，使駕駛能夠獲取比起一般 2D 圖像導航更豐富的道路環境資訊。<span class="txt-red">(機器學習、語義分割、手勢辨識、Non blocking socket)</span></p>
+          </section> <!-- class="project" -->
+
+          <section class="project"> <!-- 四下的 project -->
+            <p class="bold noMarginBottom">作業系統　多工處理</p>
+            <p class="noMarginTop noMarginBottom">　　比較以下四種方法之執行時間並分析之 :</p>
+              <ol type = "1">
+                <li>將 N 筆數目字直接進行 BubbleSort。
+                <li>將 N 筆數目字切成 K 份，先在 1 個 <span class="txt-red">process</span> 內對 K 份資料進行 BubbleSort 之後，再用同一個 process 作 MergeSort。
+                <li>將 N 筆數目字切成 K 份，並由 K 個 processes 各別進行 BubbleSort 之後，再用 K-1 個 process(es) 作 MergeSort。
+                <li>將 N 筆數目字切成 K 份，並由 K 個 <span class="txt-red">threads</span> 各別進行 BubbleSort 之後，再用 K-1 個 thread(s) 作 MergeSort。
+              </ol>
+
+            <p class="bold noMarginBottom">多媒體程式設計　個人簡歷網頁</p>
+            <p class="noMarginTop">　　本網頁</p>
+          </section> <!-- class="project" -->
+
+        </section> <!-- class="S3R" -->
+      </div> <!-- div="container" -->
+    </aside>
+  </main>
+
+  <footer>
+    <h5>Copyrgiht @ 2023 All rights reserved</h5>
+  </footer>
+
+</body>
+
+</html>
